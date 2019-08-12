@@ -1,0 +1,30 @@
+---
+
+# REQUIRED Settings -------------------------------------------------------------------------------
+
+# Host name of postgres server.
+# postgres_client_host:
+
+# Name of postgres database to use.
+# postgres_client_db:
+
+# User to use when connecting to postgres database.
+# postgres_client_user:
+
+# Password to use when connecting to postgres database.
+# postgres_client_password:
+
+# Important Settings (you might want to override these) -------------------------------------------
+
+# Whether or not to create the user and database on the server host (requires SSH root access
+# to the postgres server).
+postgres_client_create_user_and_db: false
+
+# List of extensions to install (requires SSH root access to the postgres server).  Only done
+# if `postgres_client_create_user_and_db`.
+postgres_client_extensions: []
+
+# Other Settings (the defaults are sensible for most cases) ---------------------------------------
+
+# Template to use when creating the database.
+postgres_client_template: template1

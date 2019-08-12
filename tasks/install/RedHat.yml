@@ -1,0 +1,13 @@
+---
+
+- name: install EPEL repository
+  yum: name=epel-release state=present
+  when: >  # not for Fedora
+    ansible_distribution == 'CentOS' or
+    ansible_distribution == 'Red Hat Enterprise Linux'
+
+- name: install client
+  yum:
+    name:
+    - postgresql
+    state: present

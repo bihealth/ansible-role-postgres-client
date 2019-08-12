@@ -1,0 +1,8 @@
+---
+
+- name: install postgres client
+  apt:
+    name:
+    - postgresql-client
+    update_cache: true
+    state: present
