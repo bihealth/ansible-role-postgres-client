@@ -8,3 +8,4 @@ testinfra_hosts = testinfra.utils.ansible_runner.AnsibleRunner(
 
 def test_psql_executable(host):
     assert host.file('/usr/bin/psql').exists
+    assert host.file('/usr/bin/pg_config').exists

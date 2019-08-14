@@ -11,4 +11,5 @@
     name:
       - postgresql
       - postgresql-libs
+      - postgresql-devel
     state: present

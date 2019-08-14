@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.1.3
+
+- Adding missing development packages.
+
 ## v0.1.2
 
 - Also installing development packages.
