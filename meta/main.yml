@@ -1,14 +1,14 @@
 ---
 
 galaxy_info:
-  role_name: bihealth.ansible-role-postgres-client
+  role_name: postgres_client
   author: Manuel Holtgrewe
   description: Setup PostgreSQL client.
   company: Core Unit Bioinformatics (CUBI), Berlin Institute of Health (BIH)
   license: MIT
   min_ansible_version: 2.8
   platforms:
-    - name: CentOS
+    - name: EL
       versions:
         - 7
     - name: Fedora
