@@ -9,5 +9,6 @@
 - name: install client
   yum:
     name:
-    - postgresql
+      - postgresql
+      - postgresql-libs
     state: present

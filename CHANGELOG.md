@@ -1,5 +1,9 @@
 # Changelog
 
+## HEAD (unreleased)
+
+- Also installing development packages.
+
 ## v0.1.1
 
 - Fixing role name
