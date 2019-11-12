@@ -5,8 +5,9 @@
 
 - name: on postgres host -- create database
   delegate_to: "{{ postgres_client_host }}"
-  become_user: postgres
-  become: true
+  vars:
+    ansible_become_user: postgres
+    ansible_become: true
   postgresql_db:
     encoding: "UTF-8"
     name: "{{ postgres_client_db }}"
@@ -16,8 +17,9 @@
 
 - name: on postgres host -- create user and grant permissions on database
   delegate_to: "{{ postgres_client_host }}"
-  become_user: postgres
-  become: true
+  vars:
+    ansible_become_user: postgres
+    ansible_become: true
   postgresql_user:
     db: "{{ postgres_client_db }}"
     name: "{{ postgres_client_user }}"
@@ -30,8 +32,9 @@
 
 - name: install postgres extensions
   delegate_to: "{{ postgres_client_host }}"
-  become_user: postgres
-  become: true
+  vars:
+    ansible_become_user: postgres
+    ansible_become: true
   postgresql_ext:
     name: "{{ item }}"
     db: "{{ postgres_client_db }}"

@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.1.4
+
+- Making work when using sudo.
+
 ## v0.1.3
 
 - Adding missing development packages.
