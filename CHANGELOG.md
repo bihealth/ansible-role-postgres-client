@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.1.5
+
+- Fix logging
+
 ## v0.1.4
 
 - Making work when using sudo.
