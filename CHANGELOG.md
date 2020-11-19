@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.1.6
+
+- Serializing database manipulation commands.
+
 ## v0.1.5
 
 - Fix logging
