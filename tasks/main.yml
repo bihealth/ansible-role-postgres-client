@@ -4,6 +4,7 @@
   include_tasks: install/{{ ansible_os_family }}.yml
 
 - name: on postgres host -- create database
+  throttle: 1
   delegate_to: "{{ postgres_client_host }}"
   become_user: postgres
   become: true
@@ -14,6 +15,7 @@
   when: postgres_client_create_user_and_db
 
 - name: on postgres host -- create user and grant permissions on database
+  throttle: 1
   delegate_to: "{{ postgres_client_host }}"
   become_user: postgres
   become: true
@@ -27,6 +29,7 @@
   when: postgres_client_create_user_and_db
 
 - name: install postgres extensions
+  throttle: 1
   delegate_to: "{{ postgres_client_host }}"
   become_user: postgres
   become: true
